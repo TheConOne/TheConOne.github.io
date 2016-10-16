@@ -1,0 +1,118 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery JavaScript -->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  body{
+    background-color: #3498db;
+    padding-top: 20px;
+  }
+  #website-picker{
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    z-index:3;
+  }
+  #home {
+	height: 100%;
+	/*Horiztonally and vertically centering content"*/
+    text-align: center;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+  h1 {
+    font-family: Monospace;
+    color: white;
+  }
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  .title-border{
+    background-color: #e67e22;
+    border-color: white;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .img-border {
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+</style>
+
+<body>
+  <div class="container-fluid">
+    <div id=home>
+      <h1 class="title-border page-header">
+        While(Harassment!=NULL)do<span id="cursor">|
+        </span>
+      </h1>
+    </div>
+
+    <div class="row">
+
+      <div class="column-md-1">
+    <img class="img-responsive img-border" src="https://s.aolcdn.com/hss/storage/midas/739f02f27c82c2a7b90d42faae31df19/203229642/hh-leadimage-d73343cf.jpg" alt="Hack Harassment background">
+      </div>
+
+      <div class="row">
+      <div class="column-md-1">
+
+    <div id="website-picker">
+      <!-- Single button -->
+      <div class="btn-group">
+        <button type="button"
+                class="btn btn-default dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false">
+          *pick a website* <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="https://www.facebook.com/help/1000976436606344">Facebook</a></li>
+          <li><a href="https://support.twitter.com/articles/117063">Twitter</a></li>
+          <li><a href="https://app.hackriddle.com/meals.html">Tumblr</a></li>
+        </ul>
+      </div>
+    </div>
+
+        </div>
+      </div>
+
+    </div>
+      <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-5">
+          <p style="color: white">Don't see your website? Submit it below!</p>
+        </div>
+      </div>
+
+    <form action="#">
+      <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-5">
+          <input type="text" class="form-control"
+                   placeholder="Example: Youtube.com" required>
+        </div>
+        <div class="col-md-3">
+          <button type="submit" class="btn btn-primary">
+            Submit
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
